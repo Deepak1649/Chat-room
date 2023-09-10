@@ -81,12 +81,8 @@ WSGI_APPLICATION = 'studybud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'TjtumfYidm860lXiDFmr',
-        'HOST': 'containers-us-west-184.railway.app',
-        'PORT': '6784',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
